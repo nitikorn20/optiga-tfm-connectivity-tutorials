@@ -10,20 +10,13 @@
 
 **This happens every day.** Software-only security isn't enough.
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'fontSize':'14px'}}}%%
-graph LR
-    A[Attacker buys<br/>one device] -->|$20 JTAG| B[Dumps<br/>firmware]
-    B -->|Extract| C[Steals<br/>private key]
-    C -->|Clone| D[10,000 fake<br/>devices]
-    D -->|Attack| E[Your entire<br/>fleet at risk]
+<div align="center">
 
-    style A fill:#ffcccc,stroke:#cc0000
-    style B fill:#ffcccc,stroke:#cc0000
-    style C fill:#ffcccc,stroke:#cc0000
-    style D fill:#ffcccc,stroke:#cc0000
-    style E fill:#ff0000,stroke:#990000,color:#fff
-```
+![Attack Flow](images/attack-flow-diagram.png)
+
+*How a single compromised device can threaten your entire IoT fleet*
+
+</div>
 
 ### The Problem vs The Solution
 
@@ -83,39 +76,13 @@ This tutorial series shows you how to build **production-ready secure IoT system
 
 The PSoC™ Edge E84 system provides hardware-isolated security layers:
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'fontSize':'16px', 'primaryColor':'#e3f2fd', 'primaryTextColor':'#000', 'primaryBorderColor':'#1976d2', 'secondaryColor':'#c8e6c9', 'tertiaryColor':'#fff3e0'}}}%%
-graph TB
-    subgraph PSoC["PSoC™ Edge E84 MCU"]
-        subgraph NonSecure["Non-Secure World"]
-            APP["Your Application<br/>• Calls PSA APIs<br/>• No direct crypto access"]
-        end
+<div align="center">
 
-        subgraph Secure["Secure World (TF-M)"]
-            PSA["PSA Crypto Service"]
-            ATT["Attestation Service"]
-            STOR["Secure Storage"]
-        end
+![System Architecture](images/system-architecture.png)
 
-        subgraph Hardware["Hardware Security"]
-            OPTIGA["OPTIGA™ Trust M (I²C)<br/>• Hardware-backed crypto<br/>• Secure key storage"]
-        end
+*Three-layer security architecture: Non-Secure World → Secure World (TF-M) → Hardware Security (OPTIGA)*
 
-        APP -->|PSA API calls| PSA
-        APP -->|PSA API calls| ATT
-        PSA -->|Hardware operations| OPTIGA
-        ATT -->|Hardware operations| OPTIGA
-    end
-
-    style NonSecure fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style Secure fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style Hardware fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style APP fill:#bbdefb,stroke:#1976d2
-    style PSA fill:#a5d6a7,stroke:#388e3c
-    style ATT fill:#a5d6a7,stroke:#388e3c
-    style STOR fill:#a5d6a7,stroke:#388e3c
-    style OPTIGA fill:#ffcc80,stroke:#f57c00
-```
+</div>
 
 **Key Security Properties:**
 - ✅ **Hardware isolation** - Non-Secure code cannot access Secure memory
@@ -181,22 +148,13 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ### Learning Progression
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'fontSize':'16px'}}}%%
-graph LR
-    START([📖 Read<br/>README]) --> PART1[📘 Part 1<br/>Attestation<br/>30 min<br/>Beginner]
-    PART1 --> PART2[📘 Part 2<br/>Signing<br/>45 min<br/>Intermediate]
-    PART2 --> PART3[📘 Part 3<br/>Secure Channel<br/>90 min<br/>Advanced]
-    PART3 --> PROD([🚀 Production<br/>Ready!])
+<div align="center">
 
-    style START fill:#e3f2fd,stroke:#1976d2
-    style PART1 fill:#bbdefb,stroke:#1976d2
-    style PART2 fill:#90caf9,stroke:#1565c0
-    style PART3 fill:#42a5f5,stroke:#0d47a1,color:#fff
-    style PROD fill:#2e7d32,stroke:#1b5e20,color:#fff
-```
+![Learning Progression](images/learning-progression.png)
 
-**Total Time:** ~2.5 hours to complete all tutorials
+*Complete the series in ~2.5 hours: Beginner → Intermediate → Advanced → Production Ready!*
+
+</div>
 
 ---
 
