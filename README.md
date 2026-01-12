@@ -97,7 +97,7 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ### 📘 Part 1: Device Identity with Attestation
 
-**Repository:** [psoc-edge-optiga-01-attestation](https://github.com/TESA-Workshops/psoc-edge-optiga-01-attestation)
+**Repository:** [psoc-edge-optiga-01-attestation](https://github.com/nitikorn20/psoc-edge-optiga-01-attestation)
 
 **What You'll Build:**
 - Generate cryptographic attestation token proving device authenticity
@@ -114,7 +114,7 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ### 📘 Part 2: Hardware-Protected Digital Signatures
 
-**Repository:** [psoc-edge-optiga-02-signing](https://github.com/TESA-Workshops/psoc-edge-optiga-02-signing)
+**Repository:** [psoc-edge-optiga-02-signing](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)
 
 **What You'll Build:**
 - Sign data using ECDSA with OPTIGA device key
@@ -131,7 +131,7 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ### 📘 Part 3: End-to-End Encrypted Communication
 
-**Repository:** [psoc-edge-optiga-03-secure-channel](https://github.com/TESA-Workshops/psoc-edge-optiga-03-secure-channel)
+**Repository:** [psoc-edge-optiga-03-secure-channel](https://github.com/nitikorn20/psoc-edge-optiga-03-secure-channel)
 
 **What You'll Build:**
 - Complete secure channel (handshake + encryption)
@@ -215,7 +215,7 @@ Get hands-on with OPTIGA™ Trust M autonomous demo:
 
 ```bash
 # 1. Clone the attestation example
-git clone https://github.com/TESA-Workshops/psoc-edge-optiga-01-attestation
+git clone https://github.com/nitikorn20/psoc-edge-optiga-01-attestation
 cd psoc-edge-optiga-01-attestation
 
 # 2. Build the project
@@ -247,7 +247,7 @@ Demo completed successfully!
 
 **🎉 Success!** You just used OPTIGA™ Trust M for hardware-rooted device identity!
 
-**👉 [See full tutorial in Part 1 repository →](https://github.com/TESA-Workshops/psoc-edge-optiga-01-attestation)**
+**👉 [See full tutorial in Part 1 repository →](https://github.com/nitikorn20/psoc-edge-optiga-01-attestation)**
 
 ---
 
@@ -268,9 +268,9 @@ Demo completed successfully!
 
 All example projects are in separate repositories for easy cloning:
 
-- **[psoc-edge-optiga-01-attestation](https://github.com/TESA-Workshops/psoc-edge-optiga-01-attestation)** - Part 1: Device attestation
-- **[psoc-edge-optiga-02-signing](https://github.com/TESA-Workshops/psoc-edge-optiga-02-signing)** - Part 2: Digital signatures
-- **[psoc-edge-optiga-03-secure-channel](https://github.com/TESA-Workshops/psoc-edge-optiga-03-secure-channel)** - Part 3: Encrypted channel
+- **[psoc-edge-optiga-01-attestation](https://github.com/nitikorn20/psoc-edge-optiga-01-attestation)** - Part 1: Device attestation
+- **[psoc-edge-optiga-02-signing](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)** - Part 2: Digital signatures
+- **[psoc-edge-optiga-03-secure-channel](https://github.com/nitikorn20/psoc-edge-optiga-03-secure-channel)** - Part 3: Encrypted channel
 
 Each project is a **complete ModusToolbox™ workspace** ready to build and flash.
 
@@ -295,7 +295,7 @@ Each project is a **complete ModusToolbox™ workspace** ready to build and flas
 
 - **[Infineon Developer Community](https://community.infineon.com/)** - Forums and discussions
 - **[ModusToolbox Forums](https://community.infineon.com/t5/ModusToolbox/bd-p/ModusToolbox)** - Build system help
-- **[GitHub Issues](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials/issues)** - Report problems
+- **[GitHub Issues](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials/issues)** - Report problems
 
 ---
 
@@ -303,7 +303,7 @@ Each project is a **complete ModusToolbox™ workspace** ready to build and flas
 
 Found an issue or have suggestions?
 
-- **Report Issues:** [GitHub Issues](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials/issues)
+- **Report Issues:** [GitHub Issues](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials/issues)
 - **Ask Questions:** [Infineon Community](https://community.infineon.com/)
 
 ---
