@@ -921,33 +921,9 @@ Agricultural IoT sensors in fields
 
 ### Next Steps
 
-**Ready to implement hardware-secured connectivity?**
-
-👉 **[Start with Blog 1: Device Attestation →](blog-01-attestation.md)**
-
-Learn how OPTIGA provides unforgeable device identity using Initial Attestation Keys
-
----
-
-**Want to compare OPTIGA with your current solution?**
-
-👉 **[Read: OPTIGA vs Alternatives Deep Dive →](docs/optiga-advantages.md)**
-
-Detailed cost-benefit analysis and feature comparison
-
----
-
-**Need to justify OPTIGA to stakeholders?**
-
-👉 **[Explore: Real-World Use Cases →](docs/use-cases.md)**
-
-Industry-specific examples with ROI analysis
-
----
-
 **Return to main page**
 
-👉 **[Back to README →](README.md)**
+👉 **[Back to README →](../README.md)**
 
 ---
 

@@ -97,7 +97,7 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ### 📘 Part 1: Device Identity with Attestation
 
-**Repository:** [psoc-edge-optiga-01-attestation](https://github.com/nitikorn20/psoc-edge-optiga-01-attestation)
+**Repository:** [01-attestation](https://github.com/nitikorn20/01-attestation)
 
 **What You'll Build:**
 - Generate cryptographic attestation token proving device authenticity
@@ -114,7 +114,7 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ### 📘 Part 2: Hardware-Protected Digital Signatures
 
-**Repository:** [psoc-edge-optiga-02-signing](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)
+**Repository:** [02-signing](https://github.com/nitikorn20/02-signing)
 
 **What You'll Build:**
 - Sign data using ECDSA with OPTIGA device key
@@ -131,7 +131,7 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ### 📘 Part 3: End-to-End Encrypted Communication
 
-**Repository:** [psoc-edge-optiga-03-secure-channel](https://github.com/nitikorn20/psoc-edge-optiga-03-secure-channel)
+**Repository:** [03-secure-channel](https://github.com/nitikorn20/03-secure-channel)
 
 **What You'll Build:**
 - Complete secure channel (handshake + encryption)
@@ -189,6 +189,7 @@ This series builds a **complete secure IoT communication system** in three progr
 ### Software
 
 - **ModusToolbox™ 3.6+** - [Download](https://www.infineon.com/modustoolbox)
+  - Tested with ModusToolbox 3.6; project creation performed with ModusToolbox 3.6
   - Includes TF-M, OPTIGA drivers, and build tools
 - **Serial Terminal** (Tera Term, PuTTY, or VS Code Serial Monitor)
   - Settings: 115200 baud, 8N1, no flow control
@@ -211,21 +212,31 @@ This series builds a **complete secure IoT communication system** in three progr
 
 ## Quick Start (5 Minutes)
 
-Get hands-on with OPTIGA™ Trust M autonomous demo:
+### Build and Program in VS Code (ModusToolbox Extension)
 
-```bash
-# 1. Clone the attestation example
-git clone https://github.com/nitikorn20/psoc-edge-optiga-01-attestation
-cd psoc-edge-optiga-01-attestation
+This is the standard workflow for all examples in this series. It assumes ModusToolbox 3.6+ and the VS Code ModusToolbox extension are already installed.
 
-# 2. Build the project
-make -j8
+1. Clone any example repo and open the project folder in VS Code. The ModusToolbox extension will prompt to install required tools; let it complete.
 
-# 3. Flash to device
-make program
+   ![ModusToolbox extension tool installation](images/build-step-01-tools-install.jpg)
 
-# 4. Open serial terminal (115200 baud, 8N1)
-```
+2. Add the bootloader for this workspace. Use the ModusToolbox action **Add Bootloader**. This creates `proj_bootloader` and pulls required dependencies.
+
+   ![Add Bootloader action in ModusToolbox](images/build-step-02-add-bootloader.jpg)
+
+3. Confirm that `proj_bootloader` appears in the workspace after the installation completes.
+
+   ![Workspace with proj_bootloader](images/build-step-03-bootloader-workspace.jpg)
+
+4. Build and program the board using the ModusToolbox **Build** and **Program** actions.
+
+   ![Build and program actions](images/build-step-04-build-program.jpg)
+
+**Notes:**
+- If Add Bootloader or Build fails, run **Clean** and try again.
+- In some cases, you may need to run **Add Bootloader** a second time to complete dependency downloads after `proj_bootloader` is created.
+
+After programming, open a serial terminal (115200 baud, 8N1) to verify the demo output.
 
 **Expected Output (Serial Monitor):**
 ```
@@ -247,7 +258,7 @@ Demo completed successfully!
 
 **🎉 Success!** You just used OPTIGA™ Trust M for hardware-rooted device identity!
 
-**👉 [See full tutorial in Part 1 repository →](https://github.com/nitikorn20/psoc-edge-optiga-01-attestation)**
+**👉 [See full tutorial in Part 1 repository →](https://github.com/nitikorn20/01-attestation)**
 
 ---
 
@@ -268,9 +279,9 @@ Demo completed successfully!
 
 All example projects are in separate repositories for easy cloning:
 
-- **[psoc-edge-optiga-01-attestation](https://github.com/nitikorn20/psoc-edge-optiga-01-attestation)** - Part 1: Device attestation
-- **[psoc-edge-optiga-02-signing](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)** - Part 2: Digital signatures
-- **[psoc-edge-optiga-03-secure-channel](https://github.com/nitikorn20/psoc-edge-optiga-03-secure-channel)** - Part 3: Encrypted channel
+- **[01-attestation](https://github.com/nitikorn20/01-attestation)** - Part 1: Device attestation
+- **[02-signing](https://github.com/nitikorn20/02-signing)** - Part 2: Digital signatures
+- **[03-secure-channel](https://github.com/nitikorn20/03-secure-channel)** - Part 3: Encrypted channel
 
 Each project is a **complete ModusToolbox™ workspace** ready to build and flash.
 
